@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="wrapper">
+            <label for="loanprice" class="lbl">Loan Amount</label>
+            <input type="number" id="loanprice" placeholder="0">
+        </div>
+
+        <div class="wrapper">
+            <label for="rateofInterast" class="lbl">Rate of Interast</label>
+            <input type="number" id="rateofinterast" placeholder="0">
+        </div>
+
+        <div class="wrapper">
+            <label for="period" class="lbl">Time Period [Years]</label>
+            <input type="number" id="period" placeholder="0">
+        </div>
+
+        <section class="results">
+            <div class="wrapper">
+                <label class="lbl">Emi</label>
+                <label class="lbl" id="emi">0.00</label>
+            </div>
+
+            <div class="wrapper">
+                <label class="lbl">Total Interast</label>
+                <label class="lbl" id="interast">0.00</label>
+            </div>
+
+            <div class="wrapper">
+                <label class="lbl">Total Payble</label>
+                <label class="lbl" id="totle">0.00</label>
+            </div>
+        </section>
+        <div class="wrapper">
+
+            <button id="calc">Calculate</button>
+        </div>
+
+        <a class="lnk" href="index.html">Flat price calculator</a>
+    </div>
+
+
+
+</body>
+
+</html>
