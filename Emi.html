@@ -14,17 +14,34 @@
     <div class="container">
         <div class="wrapper">
             <label for="loanprice" class="lbl">Loan Amount</label>
-            <input type="number" id="loanprice" placeholder="0">
+            <input type="number" min="0" id="loanprice" placeholder="0">
         </div>
 
         <div class="wrapper">
             <label for="rateofInterast" class="lbl">Rate of Interast</label>
-            <input type="number" id="rateofinterast" placeholder="0">
+            <input type="number" min="0" id="rateofinterast" placeholder="0">
         </div>
 
         <div class="wrapper">
+
             <label for="period" class="lbl">Time Period [Years]</label>
-            <input type="number" id="period" placeholder="0">
+            <label class="lbl" id="per">1</label>
+        </div>
+        <div class="wrapper">
+            <button id="sub" class="cng">-</button>
+            <input type="range" value="1" min="0" max="30" id="period" placeholder="0">
+            <button id="add" class="cng">+</button>
+        </div>
+
+        <div class="wrapper">
+
+            <label for="period" class="lbl">Time Period [Months]</label>
+            <label class="lbl" id="per">1</label>
+        </div>
+        <div class="wrapper">
+            <button id="sub" class="cng">-</button>
+            <input type="range" value="1" min="0" max="11" id="period" placeholder="0">
+            <button id="add" class="cng">+</button>
         </div>
 
         <section class="results">
@@ -35,7 +52,7 @@
 
             <div class="wrapper">
                 <label class="lbl">Total Interast</label>
-                <label class="lbl" id="interast">0.00</label>
+                <label class="lbl" id="interest">0.00</label>
             </div>
 
             <div class="wrapper">
@@ -45,10 +62,12 @@
         </section>
         <div class="wrapper">
 
-            <button id="calc">Calculate</button>
+            <button class="btn" id="calcEmi">Calculate</button>
         </div>
 
         <a class="lnk" href="index.html">Flat price calculator</a>
+
+        <script type="text/javascript" src="Emi.js"></script>
     </div>
 
 
